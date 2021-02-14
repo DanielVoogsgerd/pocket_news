@@ -21,4 +21,4 @@ consumer_key = "CONSUMER KEY"
 
 A consumer key can be created on the [pocket developer website](https://getpocket.com/developer/apps/new)
 
-During the first run an access key is requested via OAuth which is stored in `$XDG_DATA_HOME/datafile.toml`.
+During the first run an access key is requested via OAuth which is stored in `$XDG_DATA_HOME/pocket_news/datafile.toml`.
