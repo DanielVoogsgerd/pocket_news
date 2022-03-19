@@ -6,8 +6,17 @@ use std::{io::prelude::*, path::PathBuf};
 use std::fs::File;
 
 #[derive(Serialize, Deserialize, Debug)]
+pub struct Source {
+    pub url: String,
+    pub tag: String,
+    pub r#type: String,
+    pub no_articles: Option<u32>
+}
+
+#[derive(Serialize, Deserialize, Debug)]
 pub struct Config {
     pub consumer_key: Option<String>,
+    pub source: Vec<Source>
 }
 
 #[derive(Serialize, Deserialize)]
