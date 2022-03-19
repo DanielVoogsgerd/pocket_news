@@ -1,0 +1,9 @@
+[Unit]
+Description=Load news to Pocket before bed
+After=timers.target
+
+[Timer]
+OnCalendar=*-*-* 22:00:00
+
+[Install]
+WantedBy=timers.target

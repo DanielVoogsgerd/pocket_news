@@ -1,0 +1,7 @@
+[Unit]
+Description=Pocket News
+
+[Service]
+Type=oneshot
+ExecStart=/opt/pocket_news/target/release/examples/nos
+ExecStart=/opt/pocket_news/target/release/examples/hackernews
